@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewsSystem.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,17 @@ namespace NewsSystem.Web.Controllers
 {
     public class HomeController : Controller
     {
+        private NewsSystemDbContext db;
+
+        public HomeController()
+        {
+            this.db = new NewsSystemDbContext();
+        }
+
         public ActionResult Index()
         {
-            return View();
+            var news = this.db.News;
+            return View(news);
         }
 
         public ActionResult About()

@@ -1,11 +1,11 @@
-﻿using NewsSystem.Data.Common.Repository;
-using NewsSystem.Data.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NewsSystem.Data.Common.Repository;
+using NewsSystem.Data.Models;
 
 namespace NewsSystem.Data
 {
@@ -28,13 +28,13 @@ namespace NewsSystem.Data
             }
         }
 
-        public IRepository<News> News
-        {
-            get
-            {
-                return this.GetRepository<News>();
-            }
-        }
+        //public IRepository<News> News
+        //{
+        //    get
+        //    {
+        //        return this.GetRepository<News>();
+        //    }
+        //}
 
         public void Dispose()
         {

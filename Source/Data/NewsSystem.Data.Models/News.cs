@@ -17,7 +17,8 @@ namespace NewsSystem.Data.Models
 
         public string Title { get; set; }
 
-        [Index(IsUnique=true)]
+        //TODO set length and uncomment the row bellow
+        //[Index(IsUnique = true)]
         public string Link { get; set; }
 
         public Category Category { get; set; }

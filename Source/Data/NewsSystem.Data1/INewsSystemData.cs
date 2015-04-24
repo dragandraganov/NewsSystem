@@ -13,7 +13,7 @@ namespace NewsSystem.Data
     {
         DbContext Context { get; }
 
-        IRepository<News> News { get; }
+        //IRepository<News> News { get; }
 
         void Dispose();
 
