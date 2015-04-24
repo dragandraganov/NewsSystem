@@ -22,7 +22,7 @@ namespace NewsSystem.Web.ViewModels
 
         public string Description { get; set; }
 
-        public DateTime CreatedOn { get; set; }
+        public DateTime PubDate { get; set; }
 
         public int CountVisits { get; set; }
 

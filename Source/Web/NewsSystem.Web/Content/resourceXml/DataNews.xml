@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<stream>
+  <title>News Title Example</title>
+  <link>www.NewsSystemExample.com</link>
+  <category>Business</category>
+  <description>
+    Nam sit amet accumsan risus. In porttitor eros quis mollis iaculis. Cras nec ultrices nisi. Donec ac consectetur lorem, non dapibus quam. Vivamus interdum quis arcu eu consequat. Curabitur cursus risus a turpis viverra, sed sagittis est dictum. Pellentesque elementum at magna sit amet placerat.
+
+    Duis ex leo, ultricies eu nisi quis, pellentesque dignissim risus. Etiam posuere sollicitudin velit sit amet condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nec erat rhoncus eros lobortis ornare vitae id lorem. Proin in massa sem. Sed ex velit, placerat at dignissim ac, dapibus eget leo. Curabitur posuere mi diam, ac suscipit eros tristique eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ultricies auctor venenatis. Nulla congue blandit maximus. Aliquam erat volutpat. Donec ut magna nibh. Aliquam placerat sit amet felis eu elementum. Nam tempus pretium faucibus. Vivamus pretium sem eu orci pretium condimentum.
+
+    Proin nisi diam, tempus vel mollis sed, ultrices finibus erat. In volutpat faucibus purus, vitae ullamcorper elit fringilla vehicula. In volutpat sem eros, at molestie risus consectetur id. Etiam sit amet porta erat. Proin quis placerat eros. Ut venenatis leo non ultrices euismod. Duis in rhoncus augue, eget gravida ante.
+
+    Sed placerat orci lectus, id pretium mi dictum sit amet. In ut bibendum arcu. Donec ut tristique eros. Sed lorem orci, vestibulum ut hendrerit dapibus, interdum quis nisl. Donec tempus efficitur sem ut pellentesque. Donec nec tortor lacus. Sed dictum magna eu tempor tincidunt. Aenean eu elementum nibh, vitae imperdiet felis. Praesent auctor est sit amet sapien rhoncus, eget suscipit purus condimentum. Nullam non dolor pulvinar, dapibus ipsum vel, cursus nisl. Maecenas sodales diam in interdum consectetur. Suspendisse molestie pellentesque aliquam.
+  </description>
+  <pubDate>04-21-2015</pubDate>
+</stream>
