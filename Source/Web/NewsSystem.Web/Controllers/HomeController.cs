@@ -15,13 +15,35 @@ namespace NewsSystem.Web.Controllers
         {
         }
 
-        public ActionResult Index()
+        //TODO Use Cache
+        public ActionResult Index(string query, DateTime? startDate, DateTime? endDate)
         {
-            var news = this.Data.News
-                .All()
-                .Project()
-                .To<NewsViewModel>();
-            return View(news);
+            var allNews = this.Data.News
+                .All();
+
+            if (!(query == null || query.Trim() == String.Empty))
+            {
+                allNews = allNews.Where(n => n.Title.IndexOf(query) != -1);
+            }
+
+            if (startDate != null || endDate != null)
+            {
+                if (startDate == null)
+                {
+                    startDate = DateTime.Now;
+                }
+                else if (endDate == null)
+                {
+                    endDate = DateTime.Now;
+                }
+                allNews = allNews.Where(t => t.CreatedOn >= startDate && t.CreatedOn <= endDate);
+            }
+
+            var allTasksModel = allNews.Project()
+                .To<NewsViewModel>()
+                .ToList();
+
+            return View(allTasksModel);
         }
 
         public ActionResult About()

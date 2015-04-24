@@ -1,0 +1,13 @@
+﻿@model NewsSystem.Web.ViewModels.NewsViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<li class="list-group-item">
+    <a href="@Model.Link" class="news-title">@Model.Title</a>
+    <div class="date-created">@Model.CreatedOn</div>
+    <br />
+    <h3>@Model.Description</h3>
+</li>
+

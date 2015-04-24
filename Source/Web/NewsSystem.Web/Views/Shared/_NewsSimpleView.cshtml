@@ -1,0 +1,7 @@
+﻿@model NewsSystem.Web.ViewModels.NewsViewModel
+
+<li class="list-group-item">
+    <a href="/News/Details/@Model.Id">@Model.Title</a><span class="pull-right">Category : @Model.CategoryName</span>
+    <div>@Model.CreatedOn</div>
+</li>
+

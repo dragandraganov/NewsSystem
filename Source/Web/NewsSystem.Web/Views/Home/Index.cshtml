@@ -3,9 +3,17 @@
 @{
     ViewBag.Title = "Home Page";
 }
+<div class="row">
+    <div class="col-md-3">
+        @Html.Partial("_Search")
+    </div>
+</div>
+<br />
+<ul class="list-group">
+    @foreach (var news in Model)
+    {
+        @Html.Partial("_NewsSimpleView", news)
+    }
+</ul>
 
-@foreach (var news in Model)
-{
-    <div>@news.Title, <a href="@news.Link">@news.Link</a>, @news.CategoryName, @news.Description</div>
-}
 

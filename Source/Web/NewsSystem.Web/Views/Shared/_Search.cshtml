@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.SearchQuery = Request.QueryString["query"];
+}
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+    <div class="input-group">
+        <input type="text" class="form-control" name="query" value="@ViewBag.SearchQuery" placeholder="Search by title ...">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="submit" title="Search by title">
+                <i class="glyphicon glyphicon-search"></i>
+            </button>
+        </span>
+    </div>
+}
