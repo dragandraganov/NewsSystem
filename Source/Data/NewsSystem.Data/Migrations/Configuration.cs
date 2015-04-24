@@ -15,7 +15,7 @@ namespace NewsSystem.Data.Migrations
 
         protected override void Seed(NewsSystem.Data.NewsSystemDbContext context)
         {
-            context.News.Add(new News {Title="Test title", Description="Test desc", Link="www.test112233.com" });
+            context.News.Add(new News { Title = "Test title", Description = "Test desc", Category = Category.Business, Link = "www.test112233.com" });
             context.SaveChanges();
         }
     }

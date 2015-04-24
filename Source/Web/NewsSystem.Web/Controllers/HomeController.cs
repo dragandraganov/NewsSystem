@@ -1,24 +1,26 @@
 ﻿using NewsSystem.Data;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
+using AutoMapper.QueryableExtensions;
+using NewsSystem.Web.ViewModels;
 
 namespace NewsSystem.Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private NewsSystemDbContext db;
 
-        public HomeController()
+        public HomeController(NewsSystemData data)
+            : base(data)
         {
-            this.db = new NewsSystemDbContext();
         }
 
         public ActionResult Index()
         {
-            var news = this.db.News;
+            var news = this.Data.News
+                .All()
+                .Project()
+                .To<NewsViewModel>();
             return View(news);
         }
 

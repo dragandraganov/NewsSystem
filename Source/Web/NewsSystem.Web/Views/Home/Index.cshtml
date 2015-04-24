@@ -1,4 +1,4 @@
-﻿@model IEnumerable<NewsSystem.Data.Models.News>
+﻿@model IEnumerable<NewsSystem.Web.ViewModels.NewsViewModel>
 
 @{
     ViewBag.Title = "Home Page";
@@ -6,6 +6,6 @@
 
 @foreach (var news in Model)
 {
-    <div>@news.Title, @news.Link, @news.Description</div>
+    <div>@news.Title, <a href="@news.Link">@news.Link</a>, @news.CategoryName, @news.Description</div>
 }
 
