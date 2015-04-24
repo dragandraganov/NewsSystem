@@ -14,6 +14,7 @@ namespace NewsSystem.Data.Models
         public News()
         {
             this.PubDate = DateTime.Now;
+            this.CountPublications = 1;
         }
 
         [Key]
