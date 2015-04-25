@@ -35,3 +35,17 @@ textarea {
     font-size: 0.7em;
     font-style: italic;
 }
+
+.vticker{
+    border:1px solid black;
+}
+
+.vticker ul{
+    width:98%;
+    list-style:none;
+}
+
+.vticker ul li{
+    border-bottom:1px solid gray;
+    padding-bottom:2px;
+}

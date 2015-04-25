@@ -49,7 +49,17 @@ namespace NewsSystem.Web.Controllers
 
             this.Data.SaveChanges();
 
-            var newsModel=AutoMapper.Mapper.Map<News,NewsViewModel>(existingNews);
+            var newsModel = new NewsViewModel();
+
+            if (existingNews == null)
+            {
+                newsModel = AutoMapper.Mapper.Map<News, NewsViewModel>(news);
+            }
+
+            else
+            {
+                newsModel = AutoMapper.Mapper.Map<News, NewsViewModel>(existingNews);
+            }
 
             return PartialView("_NewsSimpleView", newsModel);
         }
