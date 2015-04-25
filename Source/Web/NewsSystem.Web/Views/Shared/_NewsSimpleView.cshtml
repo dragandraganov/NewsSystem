@@ -1,6 +1,6 @@
 ﻿@model NewsSystem.Web.ViewModels.NewsViewModel
 
-<li>
+<li id="@Model.Id" class="news-item">
     <a href="/News/Details/@Model.Id">@Model.Title</a><span class="pull-right">Category : @Model.CategoryName</span>
     <div>@Model.PubDate</div>
 </li>

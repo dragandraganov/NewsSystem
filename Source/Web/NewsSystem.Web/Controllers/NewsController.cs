@@ -8,6 +8,7 @@ using AutoMapper.QueryableExtensions;
 using NewsSystem.Web.ViewModels;
 using NewsSystem.Web.Infrastructure.Helpers;
 using NewsSystem.Data.Models;
+using NewsSystem.Common;
 
 namespace NewsSystem.Web.Controllers
 {

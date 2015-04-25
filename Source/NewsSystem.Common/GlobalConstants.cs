@@ -8,6 +8,6 @@ namespace NewsSystem.Common
 {
     public class GlobalConstants
     {
-        public const int UpdateTimeInMs = 1000;
+        
     }
 }
