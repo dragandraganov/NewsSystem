@@ -18,15 +18,14 @@ namespace NewsSystem.Web.Controllers
         {
         }
 
-        //TODO: Count updates and repeated news /link is unique/
-        public void AddOrUpdate()
+        public ActionResult AddOrUpdate()
         {
             if (!Request.IsAjaxRequest())
             {
                 throw new HttpException();
             }
 
-            var news = XmlHelpers.DeserializeXml<News>(@"D:\Projects\NewsSystem\Source\Web\NewsSystem.Web\Content\resourceXml\DataNews.xml");
+            var news = XmlHelpers.DeserializeXml<News>(Server.MapPath("~/Content/resourceXml/DataNews.xml"));
 
             var existingNews = this.Data.News.All().FirstOrDefault(n => n.Link == news.Link);
 
@@ -49,10 +48,13 @@ namespace NewsSystem.Web.Controllers
             }
 
             this.Data.SaveChanges();
+
+            var newsModel=AutoMapper.Mapper.Map<News,NewsViewModel>(existingNews);
+
+            return PartialView("_NewsSimpleView", newsModel);
         }
 
         // GET: News
-        //TODO : Count visits
         public ActionResult Details(int id)
         {
             var news = this.Data.News
