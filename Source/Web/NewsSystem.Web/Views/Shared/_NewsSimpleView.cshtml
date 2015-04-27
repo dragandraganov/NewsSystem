@@ -1,8 +1,9 @@
 ﻿@model NewsSystem.Web.ViewModels.NewsViewModel
 
 <li id="@Model.Id" class="news-item">
-    <a href="/News/Details/@Model.Id">@Model.Title</a><span class="pull-right">Category : @Model.CategoryName</span>
-    <div>@Model.PubDate</div>
+    <h4 ><span class="text-category">@Model.CategoryName</span></h4>
+    <a href="/News/Details/@Model.Id"><span class="text-large">@Model.Title</span></a>
+    <div>@Model.PubDate.ToString("MM-dd-yyyy")</div>
 </li>
 
 

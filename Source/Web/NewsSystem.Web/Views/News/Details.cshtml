@@ -4,10 +4,10 @@
     ViewBag.Title = "Details";
 }
 
-<li class="list-group-item">
-    <a href="@Model.Link" class="news-title">@Model.Title</a>
+<li class="list-group-item news-details">
+    <div><span class="news-title">@Model.Title</span></div>
     <div class="date-created">@Model.PubDate</div>
     <br />
-    <h3>@Model.Description</h3>
+    <p class="news-description">@Model.Description</p>
 </li>
 

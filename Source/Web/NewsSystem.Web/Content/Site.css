@@ -29,6 +29,9 @@ textarea {
 
 .news-title {
     border-bottom: 1px solid lightgray;
+    color:blue;
+    font-style:italic;
+    font-weight:bold;
 }
 
 .date-created {
@@ -46,11 +49,57 @@ textarea {
 }
 
 .vticker ul li{
-    border-bottom:1px solid gray;
+    border-bottom:2px inset gray;
     padding-bottom:2px;
 }
 
 .search-results ul{
     list-style:none;
     padding:0;
+}
+
+.text-large{
+    font-size:1.6em;
+}
+
+a{
+    font-weight:bold;
+    color:black;
+}
+
+a:hover{
+    text-decoration:none;
+    color:blue;
+}
+
+a:visited{
+    text-decoration:none;
+}
+
+.text-category{
+    border-bottom:1px solid black;
+}
+
+.news-item{
+    background-color:#ebebeb;
+    padding:0 5px;
+}
+
+ul{
+    padding-left:15px;
+}
+
+.date-form{
+    max-width:177px;
+    margin-bottom:5px;
+}
+
+.news-description {
+    text-indent: 30px;
+    text-align:justify;
+    font-size:1.6em;
+}
+
+.news-details{
+    background-color:#ebebeb;
 }
