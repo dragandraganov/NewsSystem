@@ -13,9 +13,6 @@ namespace NewsSystem.Web.Infrastructure.Helpers
     {
         public static T DeserializeXml<T>(string xmlRoot) where T:class
         {
-            //XmlRootAttribute xRoot = new XmlRootAttribute();
-            //xRoot.ElementName = "stream";
-
             XmlSerializer s = new XmlSerializer(typeof(T));
             object deserializedObject;
             using (StreamReader reader = new StreamReader(xmlRoot))
