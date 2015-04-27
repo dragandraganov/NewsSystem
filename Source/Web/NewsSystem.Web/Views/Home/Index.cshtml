@@ -23,7 +23,7 @@
                 <input type="text" value="@ViewBag.endDate" class="form-control date-filter datetimepicker" id="endDate" name="endDate" placeholder="End date...">
             </div>
             <div class="form-group">
-               @Html.DropDownList("criteria", EnumHelper.GetSelectList(typeof(FilterByCriteria)), "Select criteria", new { @class = "form-control", @name="criteria"})
+               @Html.DropDownList("criteria", EnumHelper.GetSelectList(typeof(FilterByCriteria)), new { @class = "form-control", @name="criteria"})
             </div>
             <button type="submit" class="btn btn-primary"><small>Filter by date</small></button>
         }
@@ -51,14 +51,14 @@
             if (ViewBag.SearchQuery != null)
             {
                 <p class="text-center">Search results for "@ViewBag.SearchQuery"</p>
-                <div class="panel panel-default">
-                    <ul class="list-group text-center">
-                        @foreach (var news in Model)
-                        {
-                            @Html.Partial("_NewsSimpleView", news)
-                        }
-                    </ul>
-                </div>
+    <div class="panel panel-default search-results">
+        <ul class="list-group">
+            @foreach (var news in Model)
+            {
+                @Html.Partial("_NewsSimpleView", news)
+            }
+        </ul>
+    </div>
             }
             else
             {
@@ -69,7 +69,7 @@
                 {
                     if (ViewBag.StartDate == string.Empty)
                     {
-                        ViewBag.StartDate = "today";
+                        ViewBag.StartDate = "begining";
                     }
                     else if (ViewBag.EndDate == string.Empty)
                     {
@@ -98,7 +98,7 @@
                 <input type="text" value="@ViewBag.endDate" class="form-control date-filter datetimepicker" id="endDate" name="endDate" placeholder="End date...">
             </div>
             <div class="form-group">
-                @Html.DropDownList("criteria", EnumHelper.GetSelectList(typeof(GraphCriteria)), "Select criteria", new { @class = "form-control", @name = "criteria" })
+                @Html.DropDownList("criteria", EnumHelper.GetSelectList(typeof(GraphCriteria)), new { @class = "form-control", @name = "criteria" })
             </div>
             <button type="submit" class="btn btn-warning"><small>Show Graph</small></button>
         }

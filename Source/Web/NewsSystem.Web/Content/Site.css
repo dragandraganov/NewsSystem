@@ -49,3 +49,8 @@ textarea {
     border-bottom:1px solid gray;
     padding-bottom:2px;
 }
+
+.search-results ul{
+    list-style:none;
+    padding:0;
+}

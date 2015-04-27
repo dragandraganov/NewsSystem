@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web.Mvc;
 using AutoMapper.QueryableExtensions;
 using NewsSystem.Web.ViewModels;
+using NewsSystem.Common;
 
 namespace NewsSystem.Web.Controllers
 {
@@ -30,7 +31,7 @@ namespace NewsSystem.Web.Controllers
             {
                 if (startDate == null)
                 {
-                    startDate = DateTime.Now;
+                    startDate = GlobalConstants.DefaultStartDate;
                 }
                 else if (endDate == null)
                 {

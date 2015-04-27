@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Helpers;
 using System.Web.Mvc;
 using NewsSystem.Data;
+using NewsSystem.Common;
 
 namespace NewsSystem.Web.Controllers
 {
@@ -26,6 +27,11 @@ namespace NewsSystem.Web.Controllers
                 if (endDate == null)
                 {
                     endDate = DateTime.Now;
+                }
+
+                else if (startDate == null)
+                {
+                    startDate = GlobalConstants.DefaultStartDate;
                 }
 
                 allNews = allNews.Where(n => n.PubDate >= startDate && n.PubDate <= endDate);
@@ -62,12 +68,12 @@ namespace NewsSystem.Web.Controllers
                 case "2":
                     var newsGroupedByCategory = allNews
                         .GroupBy(n => n.Category)
-                        .Select(gr => new 
-                        { 
-                            Category = gr.Key.ToString(), 
-                            Count = gr.Count() 
+                        .Select(gr => new
+                        {
+                            Category = gr.Key.ToString(),
+                            Count = gr.Count()
                         })
-                        .OrderBy(gr=>gr.Count);
+                        .OrderBy(gr => gr.Count);
 
                     chart.AddTitle("News by category");
 
@@ -77,7 +83,7 @@ namespace NewsSystem.Web.Controllers
                         yValues: newsGroupedByCategory.Select(n => n.Count).ToList());
                     break;
                 default:
-                    break;
+                    return Content("<h1>Please select criteria</h1>");
             }
 
             var file = chart.GetBytes("png");

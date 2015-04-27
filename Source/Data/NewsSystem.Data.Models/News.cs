@@ -23,8 +23,8 @@ namespace NewsSystem.Data.Models
         [XmlElement("title")]
         public string Title { get; set; }
 
-        //TODO set length and uncomment the row bellow
-        //[Index(IsUnique = true)]
+        [Index(IsUnique = true)]
+        [MaxLength(200)]
         [XmlElement("link")]
         public string Link { get; set; }
 

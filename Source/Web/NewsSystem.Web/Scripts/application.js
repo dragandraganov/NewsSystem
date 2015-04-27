@@ -15,18 +15,21 @@
         mousePause: 1,
     });
 
-    $(document).on('click', '.btn-add-news', function () {
-        $.ajax({
-            url: '/News/AddOrUpdate',
-            method: 'GET',
-            success: function (data) {
-                var exisitingId = $(data).attr('id');
-                var exisitingItem = $('#' + exisitingId + '.news-item');
-                if (exisitingItem !== undefined) {
-                    exisitingItem.remove();
-                }
-                $('.vticker ul').append(data);
-            }
-        })
-    })
+    setInterval(function () {
+        getXmlData();
+    }, 1000);
 })
+
+function getXmlData() {
+            $.ajax({
+                url: '/News/AddOrUpdate',
+                method: 'GET',
+                success: function (data) {
+                    var exisitingId = $(data).attr('id');
+                    var exisitingItem = $('#' + exisitingId + '.news-item');
+                    if (exisitingItem === undefined) {
+                        $('.vticker ul').append(data);
+                    }
+                }
+            })
+        }
