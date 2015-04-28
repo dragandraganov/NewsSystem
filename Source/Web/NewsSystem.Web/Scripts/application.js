@@ -25,9 +25,10 @@ function getXmlData() {
                 url: '/News/AddOrUpdate',
                 method: 'GET',
                 success: function (data) {
+                    console.log(data);
                     var exisitingId = $(data).attr('id');
                     var exisitingItem = $('#' + exisitingId + '.news-item');
-                    if (exisitingItem === undefined) {
+                    if (exisitingItem.length === 0) {
                         $('.vticker ul').append(data);
                     }
                 }

@@ -1,16 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <stream>
-  <title>222 Example</title>
-  <link>www.NewsSystemExample222.com</link>
-  <category>Bulgaria</category>
-  <description>222
-    Nam sit amet accumsan risus. In porttitor eros quis mollis iaculis. Cras nec ultrices nisi. Donec ac consectetur lorem, non dapibus quam. Vivamus interdum quis arcu eu consequat. Curabitur cursus risus a turpis viverra, sed sagittis est dictum. Pellentesque elementum at magna sit amet placerat.
-
-    Duis ex leo, ultricies eu nisi quis, pellentesque dignissim risus. Etiam posuere sollicitudin velit sit amet condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc nec erat rhoncus eros lobortis ornare vitae id lorem. Proin in massa sem. Sed ex velit, placerat at dignissim ac, dapibus eget leo. Curabitur posuere mi diam, ac suscipit eros tristique eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ultricies auctor venenatis. Nulla congue blandit maximus. Aliquam erat volutpat. Donec ut magna nibh. Aliquam placerat sit amet felis eu elementum. Nam tempus pretium faucibus. Vivamus pretium sem eu orci pretium condimentum.
-
-    Proin nisi diam, tempus vel mollis sed, ultrices finibus erat. In volutpat faucibus purus, vitae ullamcorper elit fringilla vehicula. In volutpat sem eros, at molestie risus consectetur id. Etiam sit amet porta erat. Proin quis placerat eros. Ut venenatis leo non ultrices euismod. Duis in rhoncus augue, eget gravida ante.
-
-    Sed placerat orci lectus, id pretium mi dictum sit amet. In ut bibendum arcu. Donec ut tristique eros. Sed lorem orci, vestibulum ut hendrerit dapibus, interdum quis nisl. Donec tempus efficitur sem ut pellentesque. Donec nec tortor lacus. Sed dictum magna eu tempor tincidunt. Aenean eu elementum nibh, vitae imperdiet felis. Praesent auctor est sit amet sapien rhoncus, eget suscipit purus condimentum. Nullam non dolor pulvinar, dapibus ipsum vel, cursus nisl. Maecenas sodales diam in interdum consectetur. Suspendisse molestie pellentesque aliquam.
-  </description>
-  <pubDate>04-26-2015</pubDate>
+  <title>Child malaria vaccine: Final trials bring hope</title>
+  <link> http://www.bbc.com/news/health-32437383</link>
+  <category>Health</category>
+  <description>
+    Final clinical trials of a malaria vaccine - the first to reach this stage - suggest it could help protect millions of children against malaria.
+    But tests on 16,000 children from seven African countries found that booster doses were of limited use and vaccines in young babies were not effective.
+    After children aged 5-17 months were given three doses of the vaccine, the immunisation was only 46% effective.
+    But experts say getting the vaccine this far is a scientific milestone.
+    Data from the trial published in The Lancet showed that the success rate fell to even lower levels in younger infants.
+  </description >
+  <pubDate>04-24-2015</pubDate>
 </stream>

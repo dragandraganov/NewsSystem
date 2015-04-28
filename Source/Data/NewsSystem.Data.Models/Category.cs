@@ -8,7 +8,7 @@ namespace NewsSystem.Data.Models
         World,
         Bulgaria,
         Business,
-        Tech,
+        Technology,
         Science,
         Magazine,
         Entertainment,
